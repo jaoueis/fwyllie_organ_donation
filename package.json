@@ -1,0 +1,28 @@
+{
+  "name": "fwyllie_organ_donation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaoueis/fwyllie_organ_donation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaoueis/fwyllie_organ_donation/issues"
+  },
+  "homepage": "https://github.com/jaoueis/fwyllie_organ_donation#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}
