@@ -9,26 +9,23 @@ function swallowError(error) {
 }
 
 gulp.task('sass', function () {
-    return gulp.src(['sass/**/*.scss'])
+    return gulp.src(['sass/*.scss'])
                .pipe(sass())
                .on('error', swallowError)
-               .pipe(gulp.dest('css'))
+               .pipe(gulp.dest('css/'))
                .pipe(browserSync.stream());
 });
 
 gulp.task('serve', ['sass'], function () {
-    connect.server({
-        base: 'app',
-        port: 8000
-    }, function () {
+    connect.server({}, function () {
         browserSync({
             injectChanges: true,
             proxy        : '127.0.0.1:8000'
         });
     });
 
-    gulp.watch(['sass/**/*.scss'], ['sass']);
-    gulp.watch('app/*.php').on('change', function () {
+    gulp.watch(['sass/*.scss'], ['sass']);
+    gulp.watch('**/*.php').on('change', function () {
         browserSync.reload();
     });
 });
