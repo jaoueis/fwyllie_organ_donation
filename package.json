@@ -18,6 +18,7 @@
   "homepage": "https://github.com/jaoueis/fwyllie_organ_donation#readme",
   "devDependencies": {
     "browser-sync": "^2.23.6",
+    "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-connect-php": "^1.0.3",
     "gulp-sass": "^3.1.0"
