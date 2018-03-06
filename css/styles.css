@@ -1,8 +1,5 @@
-.header-container {
-  width: 100%;
+.header-bar-container {
   height: 80px;
-  background: blue;
+  background: #c04848;
+  text-transform: uppercase;
   text-align: center; }
-  .header-container h1 {
-    text-transform: uppercase;
-    color: yellow; }
