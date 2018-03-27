@@ -1,16 +1,64 @@
-//body {
-//    background: #ff4040;
-//}
-
 //font
 @mixin content-text {
     font-family: 'Didact Gothic', sans-serif;
 }
 
+@mixin title {
+    font-family: 'Rozha One', serif;
+}
+
 //color
 $red: #ff4040;
+$dark-red: #c04848;
 $dark-grey: #323232;
 
 .row {
     margin: 0;
+}
+
+//button
+.button-white {
+    border: solid 2px $dark-grey;
+    background: white;
+    padding: 5px 20px;
+    transition: all .3s ease;
+    &:hover,
+    &focus {
+        border: solid 2px $dark-grey;
+        background: $dark-grey;
+    }
+}
+
+.button-span-white {
+    @include content-text;
+    font-size: 1em;
+    transition: all .3s ease;
+    color: $dark-grey;
+    &:hover,
+    &focus {
+        color: white;
+    }
+}
+
+.button-black {
+    border: solid 2px $dark-grey;
+    background: $dark-grey;
+    padding: 5px 20px;
+    transition: all .3s ease;
+    &:hover,
+    &focus {
+        border: solid 2px $dark-grey;
+        background: white;
+    }
+}
+
+.button-span-black {
+    @include content-text;
+    font-size: 1em;
+    color: white;
+    transition: all .3s ease;
+    &:hover,
+    &focus {
+        color: $dark-grey;
+    }
 }
