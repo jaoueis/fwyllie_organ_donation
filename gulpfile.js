@@ -31,7 +31,7 @@ gulp.task('serve', ['sass'], function () {
     });
 
     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'sass/*.scss'], ['sass']);
-    gulp.watch(['*.php', 'section/*.html']).on('change', browserSync.reload);
+    gulp.watch(['*.php', 'section/*.html', 'js/*.js']).on('change', browserSync.reload);
 });
 
 gulp.task('default', ['js', 'serve']);
