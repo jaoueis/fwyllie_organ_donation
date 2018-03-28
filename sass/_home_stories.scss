@@ -1,6 +1,5 @@
 .home-stories-wrap {
-    margin: 60px 0 40px 0;
-    padding: 0;
+    padding: 60px 0 40px 0;
 }
 
 .story-upper {
@@ -18,9 +17,8 @@
 }
 
 .story-lower {
-    position: relative;
     height: 200px;
-    z-index: 3;
+    z-index: 0;
     &::after {
         content: "";
         width: 100%;
