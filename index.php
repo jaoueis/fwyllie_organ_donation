@@ -9,6 +9,7 @@
 <title>Document</title>
 <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Rozha+One" rel="stylesheet">
 <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -18,6 +19,8 @@ include('section/header.html');
 include('section/home_hero_banner.html');
 include('section/home_header_text.html');
 include('section/home_stories.html');
+include('section/home_involved.html');
+include('section/footer.html');
 ?>
 
 <script src="js/jquery.min.js"></script>

@@ -9,10 +9,16 @@ function swallowError(error) {
 }
 
 gulp.task('sass', function () {
-    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'sass/*.scss'])
+    return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss', 'node_modules/font-awesome/css/*.css', 'sass/*.scss'])
                .pipe(sass())
                .on('error', swallowError)
                .pipe(gulp.dest('css/'))
+               .pipe(browserSync.stream());
+});
+
+gulp.task('fonts', function () {
+    return gulp.src(['node_modules/font-awesome/fonts/*.*'])
+               .pipe(gulp.dest('fonts/'))
                .pipe(browserSync.stream());
 });
 
@@ -34,4 +40,4 @@ gulp.task('serve', ['sass'], function () {
     gulp.watch(['*.php', 'section/*.html', 'js/*.js']).on('change', browserSync.reload);
 });
 
-gulp.task('default', ['js', 'serve']);
+gulp.task('default', ['fonts', 'js', 'serve']);

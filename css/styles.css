@@ -59,7 +59,7 @@
 
 .main-nav-overlay {
   position: fixed;
-  z-index: 2;
+  z-index: 100;
   width: 80%;
   height: 100vh;
   background: #ff4040;
@@ -229,11 +229,10 @@
   width: 140px;
   position: absolute;
   top: -60px;
-  z-index: 1; }
+  z-index: 0; }
 
 .home-stories-wrap {
-  margin: 60px 0 40px 0;
-  padding: 0; }
+  padding: 60px 0 40px 0; }
 
 .story-upper {
   background: url("../images/story2.jpg") no-repeat right;
@@ -247,9 +246,8 @@
     width: 200px; }
 
 .story-lower {
-  position: relative;
   height: 200px;
-  z-index: 3; }
+  z-index: 0; }
   .story-lower::after {
     content: "";
     width: 100%;
@@ -264,3 +262,23 @@
     position: absolute;
     top: -20px;
     left: -20px; }
+
+.get-involved-wrap {
+  background: #ff4040;
+  padding: 30px 0;
+  text-align: center; }
+  .get-involved-wrap h1 {
+    font-family: 'Rozha One', serif; }
+  .get-involved-wrap p {
+    font-family: 'Didact Gothic', sans-serif;
+    color: white; }
+
+.main-footer-wrap {
+  height: 80px;
+  padding-top: 22px;
+  border-top: solid 1px #323232; }
+  .main-footer-wrap footer {
+    text-align: center; }
+    .main-footer-wrap footer span {
+      font-size: 2em;
+      margin: 0 15px; }

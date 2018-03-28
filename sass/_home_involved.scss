@@ -1,0 +1,12 @@
+.get-involved-wrap {
+    background: $red;
+    padding: 30px 0;
+    text-align: center;
+    h1 {
+        @include title;
+    }
+    p {
+        @include content-text;
+        color: white;
+    }
+}
