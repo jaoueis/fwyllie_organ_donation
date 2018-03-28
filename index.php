@@ -17,6 +17,7 @@
 include('section/header.html');
 include('section/home_hero_banner.html');
 include('section/home_header_text.html');
+include('section/home_stories.html');
 ?>
 
 <script src="js/jquery.min.js"></script>

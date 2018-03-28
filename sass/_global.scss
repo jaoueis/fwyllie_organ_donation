@@ -21,22 +21,15 @@ $dark-grey: #323232;
     border: solid 2px $dark-grey;
     background: white;
     padding: 5px 20px;
-    transition: all .3s ease;
-    &:hover,
-    &focus {
-        border: solid 2px $dark-grey;
-        background: $dark-grey;
-    }
-}
-
-.button-span-white {
     @include content-text;
     font-size: 1em;
-    transition: all .3s ease;
     color: $dark-grey;
+    transition: all .3s ease;
     &:hover,
     &focus {
         color: white;
+        border: solid 2px $dark-grey;
+        background: $dark-grey;
     }
 }
 
@@ -44,15 +37,6 @@ $dark-grey: #323232;
     border: solid 2px $dark-grey;
     background: $dark-grey;
     padding: 5px 20px;
-    transition: all .3s ease;
-    &:hover,
-    &focus {
-        border: solid 2px $dark-grey;
-        background: white;
-    }
-}
-
-.button-span-black {
     @include content-text;
     font-size: 1em;
     color: white;
@@ -60,5 +44,7 @@ $dark-grey: #323232;
     &:hover,
     &focus {
         color: $dark-grey;
+        border: solid 2px $dark-grey;
+        background: white;
     }
 }
