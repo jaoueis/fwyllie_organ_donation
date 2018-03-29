@@ -32,6 +32,10 @@
     margin-bottom: 5px;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 .main-nav-overlay {
     position: fixed;
     z-index: 100;
@@ -80,13 +84,13 @@
             padding: 0;
             h2 {
                 @include title;
-                font-size: 1.75em
+                font-size: 1.5em
             }
             li {
-                margin-bottom: 15px;
+                margin-bottom: 10px;
                 a {
                     @include content-text;
-                    font-size: 1.25em;
+                    font-size: 1em;
                     text-decoration: none;
                     color: white;
                 }
