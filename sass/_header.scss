@@ -1,7 +1,6 @@
 .header-bar-container {
     height: 60px;
     background: white;
-    text-align: center;
     box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.15);
     position: fixed;
     z-index: 1;
@@ -29,7 +28,7 @@
 .burger {
     width: 27px;
     height: 3px;
-    background: black;
+    background: $dark-grey;
     margin-bottom: 5px;
 }
 
@@ -72,21 +71,30 @@
         transform: rotate(-45deg);
     }
     nav {
-        text-align: center;
         opacity: 0;
         margin: -10px 0 0 0;
+        padding-left: 55px;
         ul {
             list-style-type: none;
-            margin: 10% 0;
+            margin: 0;
             padding: 0;
+            h2 {
+                @include title;
+                font-size: 1.75em
+            }
             li {
-                margin-bottom: 30px;
+                margin-bottom: 15px;
                 a {
                     @include content-text;
-                    font-size: 1.5em;
+                    font-size: 1.25em;
                     text-decoration: none;
                     color: white;
                 }
+            }
+            span {
+                color: white;
+                font-size: 1.5em;
+                margin-right: 15px;
             }
         }
     }
@@ -99,7 +107,6 @@
 }
 
 .desktop-nav nav {
-    text-align: center;
     ul {
         list-style-type: none;
         margin: 0;

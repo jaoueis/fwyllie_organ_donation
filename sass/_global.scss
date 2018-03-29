@@ -28,8 +28,11 @@ $dark-grey: #323232;
     &:hover,
     &focus {
         color: white;
-        border: solid 2px $dark-grey;
-        background: $dark-grey;
+        border: solid 2px $red;
+        background: $red;
+    }
+    @media screen and (min-width: 62rem) {
+        font-size: 1.25em;
     }
 }
 
@@ -46,5 +49,8 @@ $dark-grey: #323232;
         color: $dark-grey;
         border: solid 2px $dark-grey;
         background: white;
+    }
+    @media screen and (min-width: 62rem) {
+        font-size: 1.25em;
     }
 }
