@@ -4,7 +4,7 @@
     div {
         padding: 5px;
     }
-    h1 {
+    h2 {
         @include title;
         font-size: 2em;
     }
@@ -15,8 +15,21 @@
     }
     .involved-img {
         padding: 0;
+        position: relative;
     }
     img {
         width: 100%;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+    @media screen and (min-width: 62rem) {
+        h2 {
+            font-size: 3em;
+        }
+        img {
+            width: 120px;
+        }
     }
 }

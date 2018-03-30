@@ -6,5 +6,73 @@
         span {
             font-size: 0.75em;
         }
+        nav {
+            text-align: left;
+            ul {
+                padding: 0;
+                list-style-type: none;
+                h2 {
+                    @include title;
+                    font-size: 1.75em;
+                }
+                li {
+                    a {
+                        @include content-text;
+                        color: white;
+                        text-decoration: none;
+                        &:hover,
+                        &:focus {
+                            color: $dark-grey;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 62rem) {
+        padding: 30px;
+        div {
+            padding: 0;
+        }
+        .social-icons {
+            display: inline;
+            margin-right: 15px;
+            a {
+                font-size: 1.5em;
+            }
+        }
+        .follow-us {
+            margin: 0;
+        }
+    }
+}
+
+.subForm {
+    text-align: center;
+    h2 {
+        @include title;
+    }
+    p {
+        @include content-text;
+        color: white;
+    }
+    input {
+        height: 30px;
+        border: none;
+        padding: 0 15px;
+    }
+    label {
+        @include content-text;
+        background: $dark-grey;
+        font-size: 1em;
+        color: white;
+        height: 30px;
+        padding: 2px 15px;
+    }
+    @media screen and (min-width: 62rem) {
+        text-align: left;
+        h2 {
+            font-size: 1.75em;
+        }
     }
 }
