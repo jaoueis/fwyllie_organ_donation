@@ -49,6 +49,13 @@
             z-index: -1;
         }
     }
+    @media screen and (min-width: 75rem) {
+        height: 320px;
+        padding-left: 15px;
+        &:after {
+            width: 360px;
+        }
+    }
 }
 
 .story-lower {
@@ -69,6 +76,14 @@
             height: 280px;
             top: -60px;
             left: -100px;
+        }
+    }
+    @media screen and (min-width: 75rem) {
+        height: 320px;
+        margin-bottom: 60px;
+        img {
+            height: 320px;
+            left: -120px;
         }
     }
 }

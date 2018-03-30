@@ -42,6 +42,12 @@
             left: -30px;
         }
     }
+    @media screen and (min-width: 75rem) {
+        img {
+            position: static;
+            width: 320px;
+        }
+    }
 }
 
 .home-why-wrap {
@@ -81,6 +87,11 @@
             margin-bottom: 60px;
         }
     }
+    @media screen and (min-width: 75rem) {
+        &:after {
+            left: 0;
+        }
+    }
 }
 
 .home-why-text {
@@ -99,6 +110,14 @@
             width: 280px;
             top: -170px;
             left: 40px;
+        }
+
+    }
+    @media screen and (min-width: 75rem) {
+        height: auto;
+        img {
+            position: static;
+            width: 180px;
         }
     }
 }
