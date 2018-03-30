@@ -54,3 +54,13 @@ $dark-grey: #323232;
         font-size: 1.25em;
     }
 }
+
+//hr
+.global-hr {
+    width: 90%;
+    border-top: solid 1px $dark-grey;
+    margin: 30px auto;
+    @media screen and (min-width: 62rem) {
+        margin-bottom: 20px;
+    }
+}

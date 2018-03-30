@@ -33,6 +33,14 @@
     .button-black {
       font-size: 1.25em; } }
 
+.global-hr {
+  width: 90%;
+  border-top: solid 1px #323232;
+  margin: 30px auto; }
+  @media screen and (min-width: 62rem) {
+    .global-hr {
+      margin-bottom: 20px; } }
+
 .header-bar-container {
   height: 60px;
   background: white;
@@ -42,7 +50,8 @@
   @media screen and (min-width: 62rem) {
     .header-bar-container {
       height: 80px;
-      padding: 25px 0; } }
+      padding: 25px 0;
+      text-align: center; } }
 
 .burger-button-wrap {
   height: 60px;
@@ -164,7 +173,7 @@ body.no-scroll {
   padding: 60px 0 50px 0; }
   @media screen and (min-width: 62em) {
     .hero-banner-wrap {
-      padding-top: 120px; } }
+      padding-top: 80px; } }
 
 .video-wrap {
   padding: 0; }
@@ -173,29 +182,14 @@ body.no-scroll {
     width: 100%;
     height: 100%;
     background: #ff4040;
-    top: 1px;
-    display: block;
     position: absolute;
+    bottom: -5px;
     z-index: -1; }
   @media screen and (min-width: 62em) {
-    .video-wrap::before {
-      content: "";
-      width: 100%;
-      height: 100%;
-      border: solid 3px #323232;
-      position: absolute;
-      top: 5px;
-      left: 20px;
-      z-index: -2; }
     .video-wrap::after {
-      content: "";
-      width: 98%;
-      height: 105%;
-      border: solid 1px #323232;
-      position: absolute;
-      top: -10px;
-      left: 30px;
-      z-index: -1; } }
+      background: #ff4040;
+      bottom: -10px;
+      right: -15px; } }
   .video-wrap video {
     width: 100%; }
 
@@ -230,12 +224,14 @@ body.no-scroll {
     display: block; }
   @media screen and (min-width: 62rem) {
     .img-section img {
-      width: 360px;
-      top: -200px;
-      z-index: 10; } }
+      position: absolute;
+      width: 380px;
+      top: -180px;
+      left: -30px; } }
 
 .home-why-wrap {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 .home-why-pos {
   background: #ff4040;
@@ -257,29 +253,19 @@ body.no-scroll {
     position: absolute;
     z-index: -1;
     transition: all .3s ease; }
+  @media screen and (min-width: 62rem) {
+    .home-why-pos {
+      padding: 60px 15px; }
+      .home-why-pos h2 {
+        font-size: 3em; }
+      .home-why-pos p {
+        margin-bottom: 60px; } }
 
 .home-why-text {
   text-align: right; }
 
 .home-why-image {
   height: 160px; }
-  .home-why-image::before {
-    content: "";
-    width: 160%;
-    height: 110%;
-    border: solid 3px white;
-    position: absolute;
-    top: -20px;
-    left: -30px; }
-  .home-why-image::after {
-    content: "";
-    width: 160%;
-    height: 110%;
-    border: solid 1px white;
-    border-top: none;
-    position: absolute;
-    top: -30px;
-    left: -20px; }
   .home-why-image img {
     width: 140px;
     position: absolute;
@@ -288,12 +274,15 @@ body.no-scroll {
     z-index: 0; }
     @media screen and (min-width: 62rem) {
       .home-why-image img {
-        width: 200px;
-        top: -160px;
-        left: 160px; } }
+        width: 280px;
+        top: -170px;
+        left: 40px; } }
 
 .home-stories-wrap {
   padding: 60px 0 40px 0; }
+  @media screen and (min-width: 62rem) {
+    .home-stories-wrap {
+      padding: 180px 0 120px 0; } }
 
 .story-upper {
   background: url("../images/story2.jpg") no-repeat right;
@@ -316,6 +305,24 @@ body.no-scroll {
     font-family: 'Didact Gothic', sans-serif;
     width: 200px;
     color: #c04848; }
+  @media screen and (min-width: 62rem) {
+    .story-upper {
+      background: url("../images/story2.jpg") no-repeat left;
+      background-size: contain;
+      height: 280px;
+      padding: 0; }
+      .story-upper h2 {
+        font-size: 3em; }
+      .story-upper::after {
+        content: "";
+        width: 300px;
+        height: 10px;
+        background: #ff4040;
+        display: block;
+        position: absolute;
+        bottom: -8px;
+        left: 120px;
+        z-index: -1; } }
 
 .story-lower {
   height: 200px;
@@ -327,13 +334,24 @@ body.no-scroll {
     top: -20px;
     left: -20px;
     box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.3); }
+  @media screen and (min-width: 62rem) {
+    .story-lower {
+      height: 280px;
+      margin-bottom: 30px; }
+      .story-lower img {
+        height: 280px;
+        top: -60px;
+        left: -100px; } }
+
+.button-wrap {
+  padding: 0; }
 
 .get-involved-wrap {
   background: #ff4040;
   padding: 45px 15px; }
   .get-involved-wrap div {
     padding: 5px; }
-  .get-involved-wrap h1 {
+  .get-involved-wrap h2 {
     font-family: 'Rozha One', serif;
     font-size: 2em; }
   .get-involved-wrap p {
@@ -341,9 +359,19 @@ body.no-scroll {
     color: white;
     margin-bottom: 40px; }
   .get-involved-wrap .involved-img {
-    padding: 0; }
+    padding: 0;
+    position: relative; }
   .get-involved-wrap img {
-    width: 100%; }
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); }
+  @media screen and (min-width: 62rem) {
+    .get-involved-wrap h2 {
+      font-size: 3em; }
+    .get-involved-wrap img {
+      width: 120px; } }
 
 .main-footer-wrap {
   background: #c04848;
@@ -352,3 +380,53 @@ body.no-scroll {
     text-align: center; }
     .main-footer-wrap footer span {
       font-size: 0.75em; }
+    .main-footer-wrap footer nav {
+      text-align: left; }
+      .main-footer-wrap footer nav ul {
+        padding: 0;
+        list-style-type: none; }
+        .main-footer-wrap footer nav ul h2 {
+          font-family: 'Rozha One', serif;
+          font-size: 1.75em; }
+        .main-footer-wrap footer nav ul li a {
+          font-family: 'Didact Gothic', sans-serif;
+          color: white;
+          text-decoration: none; }
+          .main-footer-wrap footer nav ul li a:hover, .main-footer-wrap footer nav ul li a:focus {
+            color: #323232; }
+  @media screen and (min-width: 62rem) {
+    .main-footer-wrap {
+      padding: 30px; }
+      .main-footer-wrap div {
+        padding: 0; }
+      .main-footer-wrap .social-icons {
+        display: inline;
+        margin-right: 15px; }
+        .main-footer-wrap .social-icons a {
+          font-size: 1.5em; }
+      .main-footer-wrap .follow-us {
+        margin: 0; } }
+
+.subForm {
+  text-align: center; }
+  .subForm h2 {
+    font-family: 'Rozha One', serif; }
+  .subForm p {
+    font-family: 'Didact Gothic', sans-serif;
+    color: white; }
+  .subForm input {
+    height: 30px;
+    border: none;
+    padding: 0 15px; }
+  .subForm label {
+    font-family: 'Didact Gothic', sans-serif;
+    background: #323232;
+    font-size: 1em;
+    color: white;
+    height: 30px;
+    padding: 2px 15px; }
+  @media screen and (min-width: 62rem) {
+    .subForm {
+      text-align: left; }
+      .subForm h2 {
+        font-size: 1.75em; } }

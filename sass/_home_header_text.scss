@@ -36,15 +36,17 @@
     }
     @media screen and (min-width: 62rem) {
         img {
-            width: 360px;
-            top: -200px;
-            z-index: 10;
+            position: absolute;
+            width: 380px;
+            top: -180px;
+            left: -30px;
         }
     }
 }
 
 .home-why-wrap {
     padding: 0;
+    margin: 0;
 }
 
 .home-why-pos {
@@ -70,6 +72,15 @@
         z-index: -1;
         transition: all .3s ease;
     }
+    @media screen and (min-width: 62rem) {
+        padding: 60px 15px;
+        h2 {
+            font-size: 3em;
+        }
+        p {
+            margin-bottom: 60px;
+        }
+    }
 }
 
 .home-why-text {
@@ -78,26 +89,6 @@
 
 .home-why-image {
     height: 160px;
-    &::before {
-        content: "";
-        width: 160%;
-        height: 110%;
-        border: solid 3px white;
-        position: absolute;
-        top: -20px;
-        left: -30px;
-
-    }
-    &::after {
-        content: "";
-        width: 160%;
-        height: 110%;
-        border: solid 1px white;
-        border-top: none;
-        position: absolute;
-        top: -30px;
-        left: -20px;
-    }
     img {
         width: 140px;
         position: absolute;
@@ -105,9 +96,9 @@
         left: -20px;
         z-index: 0;
         @media screen and (min-width: 62rem) {
-            width: 200px;
-            top: -160px;
-            left: 160px;
+            width: 280px;
+            top: -170px;
+            left: 40px;
         }
     }
 }

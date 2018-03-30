@@ -1,5 +1,8 @@
 .home-stories-wrap {
     padding: 60px 0 40px 0;
+    @media screen and (min-width: 62rem) {
+        padding: 180px 0 120px 0;
+    }
 }
 
 .story-upper {
@@ -26,6 +29,26 @@
         width: 200px;
         color: $dark-red;
     }
+    @media screen and (min-width: 62rem) {
+        background: url("../images/story2.jpg") no-repeat left;
+        background-size: contain;
+        height: 280px;
+        padding: 0;
+        h2 {
+            font-size: 3em;
+        }
+        &::after {
+            content: "";
+            width: 300px;
+            height: 10px;
+            background: $red;
+            display: block;
+            position: absolute;
+            bottom: -8px;
+            left: 120px;
+            z-index: -1;
+        }
+    }
 }
 
 .story-lower {
@@ -39,4 +62,17 @@
         left: -20px;
         box-shadow: 0 10px 40px 0 rgba(0, 0, 0, .3);
     }
+    @media screen and (min-width: 62rem) {
+        height: 280px;
+        margin-bottom: 30px;
+        img {
+            height: 280px;
+            top: -60px;
+            left: -100px;
+        }
+    }
+}
+
+.button-wrap {
+    padding: 0;
 }
