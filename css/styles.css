@@ -458,3 +458,111 @@ body.no-scroll {
       text-align: left; }
       .subForm h2 {
         font-size: 1.75em; } }
+
+.whydonate-header-hero {
+  padding: 90px 0 60px 0; }
+  .whydonate-header-hero div:first-child h1 {
+    font-family: 'Rozha One', serif;
+    font-size: 2em; }
+  .whydonate-header-hero div:first-child p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1em;
+    color: #c04848; }
+  .whydonate-header-hero div:last-child img {
+    width: 80%;
+    margin: 0 auto;
+    display: block; }
+  @media screen and (min-width: 62rem) {
+    .whydonate-header-hero {
+      padding: 160px 0 80px 0; }
+      .whydonate-header-hero div:first-child h1 {
+        font-size: 3em; }
+      .whydonate-header-hero div:last-child {
+        position: relative; }
+        .whydonate-header-hero div:last-child img {
+          width: 80%;
+          position: absolute;
+          top: -180px;
+          right: -10px; } }
+
+.whydonate-main-content {
+  padding: 0; }
+
+.upper-content-title {
+  background: #ff4040;
+  padding: 30px 15px; }
+  .upper-content-title:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 64, 64, 0.3);
+    top: 20px;
+    left: 20px;
+    display: block;
+    position: absolute;
+    z-index: -1; }
+  .upper-content-title h2 {
+    font-family: 'Rozha One', serif;
+    font-size: 2em;
+    margin: 0; }
+
+.upper-content-text {
+  margin: 60px 0 30px 0; }
+  .upper-content-text p {
+    font-family: 'Didact Gothic', sans-serif;
+    color: #c04848; }
+
+.stats-wrap {
+  text-align: center;
+  margin-bottom: 30px; }
+
+.stats {
+  width: 144px;
+  height: 144px;
+  background: #ff4040;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  position: relative; }
+  .stats span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    font-family: 'Rozha One', serif;
+    font-size: 2em;
+    color: white; }
+  .stats:before {
+    content: "";
+    width: 124px;
+    height: 124px;
+    display: block;
+    background: #ff4040;
+    border: solid 1px white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%); }
+
+.stats-desc span {
+  font-family: 'Didact Gothic', sans-serif;
+  color: #c04848; }
+
+.whydonate-desc {
+  font-family: 'Didact Gothic', sans-serif;
+  color: #c04848;
+  border: solid 3px #ff4040;
+  padding: 30px 15px;
+  margin-bottom: 30px; }
+  .whydonate-desc p {
+    margin: 0; }
+  .whydonate-desc:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: solid 1px #ff4040;
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    left: -10px; }

@@ -16,10 +16,8 @@
 
 <?php
 include('section/header.html');
-include('section/home_hero_banner.html');
-include('section/home_header_text.html');
-include('section/home_stories.html');
-include('section/home_involved.html');
+include('section/why_donate_header_hero.html');
+include('section/why_donate_content.html');
 include('section/footer.html');
 ?>
 
