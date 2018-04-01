@@ -1,10 +1,10 @@
 <?php
     require_once("../PHPMailer/PHPMailer.php");
-	require_once("../PHPMailer/SMTP.php");
- 	require_once("../PHPMailer/POP3.php");
-	require_once("../PHPMailer/Exception.php");
-	use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;  
+	  require_once("../PHPMailer/SMTP.php");
+ 	  require_once("../PHPMailer/POP3.php");
+	  require_once("../PHPMailer/Exception.php");
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
     function createUser($link, $fname, $username, $password, $email, $lvllist){
         $hashedPWD = password_hash($password, PASSWORD_BCRYPT);
         $datetime =new DateTime("now");
@@ -14,27 +14,27 @@
         //echo $userstring;
         $userquery = mysqli_query($link, $userstring);
         if($userquery){
-            $userMsg = "<p>Hello " . $fname . ", you become a new user now. Please check your account info below:" . "</p><br/><li>User Name: " . $username . "</li>" . "<li>Password: " . $password . "</li><br/><p>Plese click <a href='http://localhost/fwyllie_organ_donation/admin/login.php'>HERE</a> to login.</p>"; 
+            $userMsg = "<p>Hello " . $fname . ", you become a new user now. Please check your account info below:" . "</p><br/><li>User Name: " . $username . "</li>" . "<li>Password: " . $password . "</li><br/><p>Plese click <a href='http://localhost:8888/fwyllie_organ_donation-xjin/admin/login.php'>HERE</a> to login.</p>";
             //send email
-            $mailToUser = new PHPMailer(true);  
+            $mailToUser = new PHPMailer(true);
             try {
                 $mailToUser->isSMTP();
-                //$mailToUser->SMTPDebug = 2;      
+                //$mailToUser->SMTPDebug = 2;
                 $mailToUser->SMTPSecure = 'ssl';// Enable verbose debug output
                 $mailToUser->Host = 'smtp.163.com';
                 $mailToUser->SMTPAuth = true;
-                $mailToUser->Username = 'wesley618@163.com'; 
+                $mailToUser->Username = 'wesley618@163.com';
                 $mailToUser->Password = '68760273a';
-                $mailToUser->Port = 465;  					
+                $mailToUser->Port = 465;
                 $mailToUser->setFrom('wesley618@163.com', 'Admin');
                 $mailToUser->addAddress($email);
-                $mailToUser->isHTML(true);    
+                $mailToUser->isHTML(true);
                 $mailToUser->Subject = 'New User';
                 $mailToUser->addReplyTo('wesley618@163.com', 'Admin');
-                $mailToUser->Body = "<h2>New User</h2>" . $userMsg;                  
+                $mailToUser->Body = "<h2>New User</h2>" . $userMsg;
                 $mailToUser->AltBody = "<h2>New User</h2>" . $userMsg;
                 $mailToUser->send();
-                $mailSuccessMsgUser = "Email has been sent."; 
+                $mailSuccessMsgUser = "Email has been sent.";
                 $message = "You created a new user.";
                 return $message;
             }
@@ -78,7 +78,7 @@
 
     function editUser($link, $id, $fname, $username, $password, $email, $lvl) {
 		$hashedPWD = password_hash($password, PASSWORD_BCRYPT);
-		$updatestring = $link->query("UPDATE admin_group SET user_fullname='$fname', user_id='$username', user_pwd='$hashedPWD', user_email='$email', user_permission = '$lvl' WHERE user_id= '$id'");
+		$updatestring = $link->query("UPDATE admin_group SET user_fullname='$fname', user_id='$username', user_pwd='$hashedPWD', user_email='$email', user_permission = '$lvl', expire_time='unlimited', user_first_time_login='no' WHERE user_id= '$id'");
 
 		if($updatestring) {
             $_SESSION["user_name"] = $fname;
