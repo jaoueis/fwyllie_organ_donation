@@ -21,13 +21,36 @@
         font-size: 2em;
         margin: 0;
     }
+    @media screen and (min-width: 62rem) {
+        div:first-child {
+            position: relative;
+        }
+        img {
+            width: 60%;
+            position: absolute;
+            top: 30px;
+            left: -30px;
+        }
+    }
+    @media screen and (min-width: 75rem) {
+        height: 300px;
+        margin-top: 120px;
+        img {
+            width: 40%;
+            left: 160px;
+        }
+    }
 }
 
 .upper-content-text {
-    margin: 60px 0 30px 0;
+    margin-top: 60px;
+    margin-bottom: 30px;
     p {
         @include content-text;
         color: $dark-red;
+    }
+    @media screen and(min-width: 62em) {
+        margin-bottom: 120px;
     }
 }
 
@@ -69,6 +92,24 @@
     }
 }
 
+.stats-img-wrap-upper {
+    position: relative;
+    img {
+        width: 220px;
+        position: absolute;
+        right: -50px;
+    }
+}
+
+.stats-img-wrap-lower {
+    position: relative;
+    img {
+        width: 300px;
+        position: absolute;
+        left: -50px;
+    }
+}
+
 .whydonate-desc {
     @include content-text;
     color: $dark-red;
@@ -87,5 +128,8 @@
         z-index: -1;
         top: -15px;
         left: -10px;
+    }
+    @media screen and (min-width: 75rem) {
+        margin-top: 60px;
     }
 }
