@@ -29,20 +29,14 @@
             position: relative;
             img {
                 width: 80%;
-                position: absolute;
-                top: -180px;
-                right: -10px;
+                @include center-all;
             }
         }
     }
     @media screen and (min-width: 75rem) {
         div:last-child {
-            position: relative;
             img {
-                width: 60%;
-                position: absolute;
-                top: -180px;
-                right: -10px;
+                width: 50%;
             }
         }
     }
