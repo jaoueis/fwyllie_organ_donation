@@ -56,6 +56,12 @@
             width: 360px;
         }
     }
+    @media screen and (min-width: 90rem){
+        height: 480px;
+        &:after {
+            width: 600px;
+        }
+    }
 }
 
 .story-lower {
@@ -84,6 +90,14 @@
         img {
             height: 320px;
             left: -120px;
+        }
+    }
+    @media screen and (min-width: 90rem) {
+        height: 480px;
+        margin-bottom: 60px;
+        img {
+            height: 480px;
+            left: -180px;
         }
     }
 }

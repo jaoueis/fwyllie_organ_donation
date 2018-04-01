@@ -344,6 +344,11 @@ body.no-scroll {
       padding-left: 15px; }
       .story-upper:after {
         width: 360px; } }
+  @media screen and (min-width: 90rem) {
+    .story-upper {
+      height: 480px; }
+      .story-upper:after {
+        width: 600px; } }
 
 .story-lower {
   height: 200px;
@@ -370,6 +375,13 @@ body.no-scroll {
       .story-lower img {
         height: 320px;
         left: -120px; } }
+  @media screen and (min-width: 90rem) {
+    .story-lower {
+      height: 480px;
+      margin-bottom: 60px; }
+      .story-lower img {
+        height: 480px;
+        left: -180px; } }
 
 .button-wrap {
   padding: 0; }
@@ -570,7 +582,7 @@ body.no-scroll {
 
 .stats-desc span {
   font-family: 'Didact Gothic', sans-serif;
-  color: #c04848; }
+  color: #323232; }
 
 .stats-img-wrap-upper {
   position: relative; }
@@ -681,7 +693,7 @@ body.no-scroll {
     width: 100%;
     left: -120px; }
   .story-right-desc h2,
-  .story-right-desc p:first-child {
+  .story-right-desc p {
     text-align: right; }
   .story-right-desc .story-desc-wrap {
     position: absolute;
