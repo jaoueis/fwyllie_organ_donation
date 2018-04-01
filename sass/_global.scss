@@ -64,3 +64,11 @@ $dark-grey: #323232;
         margin-bottom: 20px;
     }
 }
+
+//center all
+@mixin center-all {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
