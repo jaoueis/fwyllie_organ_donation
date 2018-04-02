@@ -19,6 +19,11 @@ $dark-grey: #323232;
 //button
 button {
     cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    border: 0;
+    background: transparent;
 }
 
 .button-white {
@@ -34,6 +39,7 @@ button {
         color: white;
         border: solid 2px $red;
         background: $red;
+        text-decoration: none;
     }
     @media screen and (min-width: 62rem) {
         font-size: 1.25em;
@@ -53,6 +59,7 @@ button {
         color: $dark-grey;
         border: solid 2px $dark-grey;
         background: white;
+        text-decoration: none;
     }
     @media screen and (min-width: 62rem) {
         font-size: 1.25em;

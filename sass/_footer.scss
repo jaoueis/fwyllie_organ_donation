@@ -61,7 +61,7 @@
         border: none;
         padding: 0 15px;
     }
-    label {
+    .newsletter-sub {
         @include content-text;
         background: $dark-grey;
         font-size: 1em;
@@ -69,6 +69,13 @@
         height: 30px;
         padding: 2px 15px;
         text-align: center;
+        border: 0;
+        transition: all 0.3s ease;
+        &:hover,
+        &:focus {
+            background: $red;
+            color: $dark-grey;
+        }
     }
     @media screen and (min-width: 62rem) {
         text-align: left;

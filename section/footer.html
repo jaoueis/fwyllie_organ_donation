@@ -45,9 +45,9 @@
         <div class="col-12 col-lg-4 subForm">
             <h2>Stay Connected</h2>
             <p>Sign up for our email newsletter to get up-to-date information on organ donation urgency update, the donation campaigns, and organ donation knowledge. You can unsubscribe at anytime.</p>
-            <form action="post" class="row">
-                <input type="email" class="col-8" placeholder="Your Email Address">
-                <label for="subscribeEmail" class="col-4">Subscribe</label>
+            <form action="newsletter.php" method="post" class="row">
+                <input type="email" id="email" class="col-8" placeholder="Your Email Address" required>
+                <button type="submit" class="col-4 newsletter-sub">Subscribe</button>
             </form>
         </div>
         <hr class="global-hr">

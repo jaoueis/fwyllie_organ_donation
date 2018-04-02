@@ -2,7 +2,12 @@
   margin: 0; }
 
 button {
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  border: 0;
+  background: transparent; }
 
 .button-white {
   border: solid 2px #323232;
@@ -15,7 +20,8 @@ button {
   .button-white:hover, .button-whitefocus {
     color: white;
     border: solid 2px #ff4040;
-    background: #ff4040; }
+    background: #ff4040;
+    text-decoration: none; }
   @media screen and (min-width: 62rem) {
     .button-white {
       font-size: 1.25em; } }
@@ -31,7 +37,8 @@ button {
   .button-black:hover, .button-blackfocus {
     color: #323232;
     border: solid 2px #323232;
-    background: white; }
+    background: white;
+    text-decoration: none; }
   @media screen and (min-width: 62rem) {
     .button-black {
       font-size: 1.25em; } }
@@ -488,14 +495,19 @@ body.no-scroll {
     height: 30px;
     border: none;
     padding: 0 15px; }
-  .subForm label {
+  .subForm .newsletter-sub {
     font-family: 'Didact Gothic', sans-serif;
     background: #323232;
     font-size: 1em;
     color: white;
     height: 30px;
     padding: 2px 15px;
-    text-align: center; }
+    text-align: center;
+    border: 0;
+    transition: all 0.3s ease; }
+    .subForm .newsletter-sub:hover, .subForm .newsletter-sub:focus {
+      background: #ff4040;
+      color: #323232; }
   @media screen and (min-width: 62rem) {
     .subForm {
       text-align: left; }
@@ -552,9 +564,7 @@ body.no-scroll {
   .upper-content-title h2 {
     font-family: 'Rozha One', serif;
     font-size: 2em;
-    margin: 0; }
-  .upper-content-title button {
-    margin-top: 30px; }
+    margin: 0 0 30px 0; }
   @media screen and (min-width: 62rem) {
     .upper-content-title div:first-child {
       position: relative; }
