@@ -411,7 +411,10 @@ body.no-scroll {
         left: -180px; } }
 
 .button-wrap {
-  padding: 0; }
+  padding: 0 0 0 15px; }
+  @media screen and (min-width: 62rem) {
+    .button-wrap {
+      padding: 0; } }
 
 .get-involved-wrap {
   background: #ff4040;

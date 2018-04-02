@@ -56,7 +56,7 @@
             width: 360px;
         }
     }
-    @media screen and (min-width: 90rem){
+    @media screen and (min-width: 90rem) {
         height: 480px;
         &:after {
             width: 600px;
@@ -103,5 +103,8 @@
 }
 
 .button-wrap {
-    padding: 0;
+    padding: 0 0 0 15px;
+    @media screen and (min-width: 62rem) {
+        padding: 0;
+    }
 }
