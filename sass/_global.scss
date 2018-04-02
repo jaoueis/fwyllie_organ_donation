@@ -17,6 +17,10 @@ $dark-grey: #323232;
 }
 
 //button
+button {
+    cursor: pointer;
+}
+
 .button-white {
     border: solid 2px $dark-grey;
     background: white;

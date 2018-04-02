@@ -1,6 +1,9 @@
 .row {
   margin: 0; }
 
+button {
+  cursor: pointer; }
+
 .button-white {
   border: solid 2px #323232;
   background: white;
@@ -464,7 +467,8 @@ body.no-scroll {
     font-size: 1em;
     color: white;
     height: 30px;
-    padding: 2px 15px; }
+    padding: 2px 15px;
+    text-align: center; }
   @media screen and (min-width: 62rem) {
     .subForm {
       text-align: left; }
@@ -502,7 +506,8 @@ body.no-scroll {
       width: 50%; } }
 
 .whydonate-main-content {
-  padding: 0; }
+  padding: 0;
+  overflow: hidden; }
 
 .upper-content-title {
   background: #ff4040;
@@ -521,6 +526,8 @@ body.no-scroll {
     font-family: 'Rozha One', serif;
     font-size: 2em;
     margin: 0; }
+  .upper-content-title button {
+    margin-top: 30px; }
   @media screen and (min-width: 62rem) {
     .upper-content-title div:first-child {
       position: relative; }

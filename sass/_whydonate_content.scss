@@ -1,5 +1,6 @@
 .whydonate-main-content {
     padding: 0;
+    overflow: hidden;
 }
 
 .upper-content-title {
@@ -20,6 +21,9 @@
         @include title;
         font-size: 2em;
         margin: 0;
+    }
+    button {
+        margin-top: 30px;
     }
     @media screen and (min-width: 62rem) {
         div:first-child {
