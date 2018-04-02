@@ -13,4 +13,13 @@ $(function () {
         $('.mobile-nav').animate({opacity: 0, margin: '-10px 0 0 0'}, 300);
         $('body').removeClass('no-scroll');
     });
+
+    $(window).scroll(function () {
+        if (window.pageYOffset > 80) {
+            console.log('workingggg');
+            $('.header-bar-container').addClass('white-nav');
+        } else {
+            $('.header-bar-container').removeClass('white-nav');
+        }
+    });
 });
