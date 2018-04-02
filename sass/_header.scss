@@ -1,9 +1,13 @@
 .header-bar-container {
     height: 60px;
-    background: white;
-    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.15);
+    background: transparent;
     position: fixed;
     z-index: 10;
+    transition: all 0.3s ease;
+    &.white-nav {
+        background: white;
+        box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.15);
+    }
     @media screen and (min-width: 62rem) {
         height: 80px;
         padding: 25px 0;

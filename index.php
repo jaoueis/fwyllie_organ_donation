@@ -27,5 +27,6 @@ include('section/footer.html');
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/mobile_nav.js"></script>
+<script src="js/video_control.js"></script>
 </body>
 </html>

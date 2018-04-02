@@ -1,12 +1,20 @@
 .hero-banner-wrap {
-    padding: 60px 0 50px 0;
-    @media screen and (min-width: 62em) {
+    padding: 60px 0 0 0;
+    margin-bottom: 50px;
+    @media screen and (min-width: 62rem) {
         padding-top: 80px;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    @media screen and (min-width: 75rem) {
+        padding-top: 0;
+        width: 100%;
     }
 }
 
 .video-wrap {
     padding: 0;
+    position: relative;
     &::after {
         content: "";
         width: 100%;
@@ -19,7 +27,23 @@
     video {
         width: 100%;
     }
-    @media screen and (min-width: 62em) {
+    button {
+        position: absolute;
+        right: 0;
+        bottom: 6px;
+        border: 0;
+        padding: 0 7px;
+        width: 60px;
+        height: 60px;
+        background: transparent;
+        transition: all .3s ease;
+        &:hover,
+        &focus {
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+    }
+    @media screen and (min-width: 62rem) {
         &::after {
             bottom: -10px;
             right: -15px;
