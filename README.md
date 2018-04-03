@@ -20,6 +20,7 @@ The site is built for Organ Donation of Ontario, to increase the awareness of or
 - Run `npm install` in Terminal/GitBash.
 - After the dev dependencies are installed, open MAMP/WAMP/XAMPP and start the server and phpmyadmin.
 - Go to myPHPadmin panel first to import the database file stored in **db** folder.
+
 *Note that if you are using a PC, make sure to change config php to Windows mode*
 
 
