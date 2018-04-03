@@ -356,7 +356,7 @@ body.no-scroll {
     color: #c04848; }
   @media screen and (min-width: 62rem) {
     .story-upper {
-      background: url("../images/story2.jpg") no-repeat left;
+      background: url("../images/amellia.jpg") no-repeat left;
       background-size: contain;
       height: 280px;
       padding: 0; }
