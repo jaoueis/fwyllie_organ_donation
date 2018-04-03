@@ -16,7 +16,6 @@ $(function () {
 
     $(window).scroll(function () {
         if (window.pageYOffset > 80) {
-            console.log('workingggg');
             $('.header-bar-container').addClass('white-nav');
         } else {
             $('.header-bar-container').removeClass('white-nav');
