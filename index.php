@@ -1,4 +1,14 @@
 <?php
+require_once("admin/newsletter.php");
+if (isset($_POST['submit'])) {
+    $subEmailAdd = trim($_POST['email']);
+    var_dump($subEmailAdd);
+    if (!empty($subEmailAdd)) {
+        $sub     = "yes";
+        $result  = saveEmailAdd($subEmailAdd, $sub);
+        $message = $result;
+    }
+}
 ?>
 <!doctype html>
 <html lang="en">
