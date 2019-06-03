@@ -17,15 +17,15 @@
   },
   "homepage": "https://github.com/jaoueis/fwyllie_organ_donation#readme",
   "devDependencies": {
-    "browser-sync": "^2.23.6",
+    "browser-sync": "^2.26.5",
     "font-awesome": "^4.7.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-connect-php": "^1.0.3",
     "gulp-sass": "^3.1.0",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.1",
     "popper.js": "^1.12.9"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0"
+    "bootstrap": "^4.3.1"
   }
 }
